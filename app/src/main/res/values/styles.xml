@@ -1,10 +1,79 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:background">@color/screen_background_color</item>
     </style>
 
+    <style name="DarkBackgroundAppTheme" parent="AppTheme">
+        <item name="android:background">@color/screen_background_color</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+    </style>
+
+    <style name="BaseTextStyle">
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="BaseSmallTextStyle" parent="BaseTextStyle">
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="BaseMediumTextStyle" parent="BaseTextStyle">
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="BaseBigTextStyle" parent="BaseTextStyle">
+        <item name="android:textSize">@dimen/text_size_big</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="MovieTitleBigStyle" parent="BaseTextStyle">
+        <item name="android:textSize">@dimen/text_size_big</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:shadowColor">@color/text_shadow_color</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">6</item>
+        <item name="android:shadowRadius">12</item>
+    </style>
+
+    <style name="TransparentBackButtonStyle" parent="BaseSmallTextStyle">
+        <item name="android:alpha">0.5</item>
+        <item name="android:lineSpacingExtra">@dimen/line_spacing_extra_small</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="drawableStartCompat">@drawable/back_arrow</item>
+        <item name="drawableTint">@color/white</item>
+    </style>
+
+    <style name="Category" parent="BaseMediumTextStyle">
+        <item name="android:textColor">@color/category_color</item>
+        <item name="android:lineSpacingExtra">@dimen/line_spacing_extra_medium</item>
+    </style>
+
+    <style name="Reviews" parent="BaseMediumTextStyle">
+        <item name="android:textColor">@color/disable_review_star_color</item>
+    </style>
+
+    <style name="StorylineTitle" parent="BaseMediumTextStyle">
+        <item name="android:lineSpacingExtra">@dimen/line_spacing_extra_medium</item>
+        <item name="android:shadowColor">@color/text_shadow_color</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">6</item>
+        <item name="android:shadowRadius">12</item>
+    </style>
+
+    <style name="ActorsFullName" parent="BaseSmallTextStyle">
+        <item name="android:textColor">@color/actors_full_name_color</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:lineSpacingExtra">@dimen/line_spacing_extra_small</item>
+    </style>
 </resources>
