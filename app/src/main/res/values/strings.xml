@@ -2,7 +2,7 @@
     <string name="app_name">AndroidAcademy</string>
     <string name="back_text">Back</string>
 
-    <string name="age_limit">13+</string>
+    <string name="movie_item_age_limit">13+</string>
     <string name="movie_details_title">Avengers: \nEnd Game</string>
     <string name="movie_category">Action, Adventure, Fantasy</string>
     <string name="movie_reviews">125 Reviews</string>
@@ -15,4 +15,10 @@
     <string name="actor_chris_evans">Chris Evans</string>
     <string name="actor_mark_ruffalo">Mark Ruffalo</string>
     <string name="actor_chris_hemsworth">Chris Hemsworth</string>
+
+    <string name="movies_list_text">Movies List</string>
+    <string name="movies_item_category">Action, Adventure, Drama</string>
+    <string name="movie_item_reviews">125 Reviews</string>
+    <string name="avengers_end_game">Avengers: End Game</string>
+    <string name="movie_item_duration">137 min</string>
 </resources>

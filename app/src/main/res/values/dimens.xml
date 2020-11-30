@@ -21,4 +21,5 @@
     <dimen name="vertical_margin_photos">8dp</dimen>
     <dimen name="margin_between_photos">8dp</dimen>
     <dimen name="margin_between_photos_and_names">6dp</dimen>
+    <dimen name="item_list_star_size">8dp</dimen>
 </resources>

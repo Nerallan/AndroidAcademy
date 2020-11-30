@@ -1,23 +1,32 @@
 package by.androidacademy.nerallan
 
 import android.os.Bundle
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import by.androidacademy.nerallan.ext.bind
-import by.androidacademy.nerallan.ext.launchActivity
+import by.androidacademy.nerallan.details.FragmentMoviesDetails
+import by.androidacademy.nerallan.ext.replaceFragment
+import by.androidacademy.nerallan.movieslist.FragmentMoviesList
+import by.androidacademy.nerallan.movieslist.MovieClickAction
 
-class MainActivity : AppCompatActivity() {
-
-    private val greetingTextView by bind<TextView>(R.id.main_screen_greeting_message)
+class MainActivity : AppCompatActivity(), MovieClickAction {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        greetingTextView.setOnClickListener { moveToMovieDetailsScreen() }
+        if (savedInstanceState == null) {
+            replaceFragment(
+                R.id.fragment_container_view,
+                FragmentMoviesList.newInstance(),
+                true
+            )
+        }
     }
 
-    private fun moveToMovieDetailsScreen() {
-        launchActivity<MovieDetailsActivity> { }
+    override fun onMovieClicked() {
+        replaceFragment(
+            R.id.fragment_container_view,
+            FragmentMoviesDetails.newInstance(),
+            true
+        )
     }
 }
