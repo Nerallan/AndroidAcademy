@@ -3,4 +3,14 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="white">#ECECEC</color>
+
+    <color name="screen_background_color">#191926</color>
+    <color name="text_shadow_color">#80000000</color>
+    <color name="category_color">#FF3466</color>
+    <color name="enable_review_star_color">#FF3365</color>
+    <color name="disable_review_star_color">#6D6D80</color>
+    <color name="actors_full_name_color">#D8D8D8</color>
 </resources>
