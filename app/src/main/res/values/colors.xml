@@ -12,5 +12,6 @@
     <color name="category_color">#FF3466</color>
     <color name="enable_review_star_color">#FF3365</color>
     <color name="disable_review_star_color">#6D6D80</color>
+    <color name="movie_duration_color">#565665</color>
     <color name="actors_full_name_color">#D8D8D8</color>
 </resources>

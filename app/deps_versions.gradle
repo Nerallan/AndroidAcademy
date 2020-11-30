@@ -9,6 +9,7 @@ ext {
     appCompatVersion = '1.2.0'
     constraintLayoutVersion = '2.0.4'
     androidMaterialVersion = '1.2.1'
+    fragmentVersion = "1.2.5"
 
     junitVersion = '4.13.1'
     junitExtVersion = '1.1.2'
